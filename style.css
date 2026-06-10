@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove a barra de rolagem horizontal padrão mantendo a navegação ativa no celular */
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Efeito suave e elegante para o link de saiba mais flutuante */
+@keyframes pulseSlow {
+    0%, 100% { opacity: 0.85; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 3s ease-in-out infinite;
+}
+
+/* Página interna do produto */
+.js-moldura-zoom {
+    height: 500px !important;
+    padding: 8px !important;
+}
+
+.js-foto-produto {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+
+
+
+/* Espaçamento melhor entre imagem e texto na página interna */
+.detalhes-container {
+    margin-top: 2rem;
+    line-height: 1.6;
+    color: #a3a3a3; /* cinza mais legível */
+}
+
+
+
+
+  
+    /* Corrige o cabeçalho das categorias que está caindo */
+    #tela-categoria-lista .flex-col {
+        text-align: center;
+    }
+
+nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+/* Força a lista a manter o layout desktop no mobile */
+#container-lista-mercadolivre > div {
+    display: flex !important;
+    flex-direction: row !important; /* Mantém horizontal */
+    flex-wrap: nowrap !important;   /* Impede que o texto desça */
+    align-items: center !important;
+    padding: 1rem !important;
+    gap: 1rem !important;
+}
+
+#container-lista-mercadolivre > div img {
+    width: 64px !important; /* Tamanho fixo que cabe no celular */
+    height: 64px !important;
+    flex-shrink: 0;        /* Não deixa a imagem encolher */
+}
+
+#container-lista-mercadolivre > div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;      /* Esconde o excesso se o texto for gigante */
+}
+
+/* Garante que o texto não quebre o layout */
+#container-lista-mercadolivre h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Ajuste se quiser mais ou menos texto */
+}
+
+@media (max-width: 768px) {
+
+    #tela-interna-produto {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .js-moldura-zoom {
+        max-width: 100%;
+        height: 280px !important;
+    }
+
+    #dados-pagina-produto h2 {
+        font-size: 1.8rem !important;
+        line-height: 1.2;
+    }
+
+    #dados-pagina-produto .text-3xl {
+        font-size: 1.6rem !important;
+    }
+}
