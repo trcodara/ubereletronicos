@@ -35,7 +35,7 @@ const produtos = [
     
     
 // CUIDADOS
-    { id: 20, cat: 'cuidados', nome: "Máquina de Corte de Cabelo Holda", preco: "R$ 29,90", descApple: "Alta precisão e ergonomia. Lâminas afiadas para acabamentos perfeitos, ideal para quem busca praticidade.", img: "maquina-holda.jpg", ficha: { "Marca": "Holda", "Uso": "Cabelo e Barba" } }
+    { id: 20, cat: 'cuidados', nome: "Máquina de Corte de Cabelo Holda", preco: "R$ 29,90", descApple: "As lâminas em aço inoxidável mantêm o corte preciso e constante durante o uso prolongado. O funcionamento sem fio garante a liberdade de movimentos, sua autonomia de bateria recarregável permite até 90 minutos de funcionamento sem a necessidade de conexão à tomada.", img: "imagens/maquina-holda.jpg", ficha: { "Marca": "Holda", "Uso": "Cabelo e Barba", "Bateria": "90 minutos", "Resistente à água": "Sim", "Quantidade de pentes": "4", "Cabo de carregamento": "Sim", "Escova de limpeza": "Sim", "Manual": "Sim"  } }
 ];
 
 const nomesCategorias = {
